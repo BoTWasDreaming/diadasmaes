@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia das mães</title>
+    <link rel="icon" href="Coração.ico" type="image/ico" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+
+        body {
+            background-color: #212121;
+        }
+
+        p {
+            font-family: "Kanit", sans-serif;
+            color: #F6F6F6;
+            font-size: 200%;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2 {
+            font-family: "Playwrite DK Loopet", cursive;
+            color: #6D9886;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 50px;
+        }
+
+        #texto-debaixo {
+            color: #4b4b4b;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .img-com-texto {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+        }
+
+        .img-com-texto:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 16px rgba(255, 255, 255, 0.7);
+        }
+
+        .img-com-texto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(3px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.4rem;
+            font-family: "Kanit", sans-serif;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .img-com-texto:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img-com-texto {
+                width: 90vw;
+                height: 90vw;
+            }
+
+            .overlay {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+
+            .overlay span {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1><strong>Feliz dia das Mães!</strong></h1>
+
+    <p>Oi Mãe, tudo bem? Eu te amo, fico feliz que seu dia chegou denovo, é mais um ano do seu lado, eu te amo do fundo
+        do meu coração, espero que nossa vida continue sendo muito boa e que não haja nenhum problema futuro entre nós,
+        as vezes posso parecer não tentar ser uma pessoa boa mas eu dou meu máximo ta mãe? Me desculpa se eu te magoei
+        sem querer e me desculpa pelas vezes que deixei de prestar atenção em você, eu te amo do fundo do meu coração
+        mãe! (Passa o mouse encima das fotos.)</p>
+
+    <div class="container">
+        <div class="img-com-texto">
+            <img src="Minha mãe.png" alt="Minha mãe" />
+            <div class="overlay">
+                <span>Te amo muito, mãe! 💖(foto da minha linda mãe e do zedinho do lado dela)</span>
+            </div>
+        </div>
+
+        <div class="img-com-texto">
+            <img src="Minha Mãe 2.jpg" alt="Minha mãe 2" />
+            <div class="overlay">
+                <span>Você é minha inspiração todos os dias 💐 (foto da minha mãe com o efeito ghibli!)</span>
+            </div>
+        </div>
+    </div>
+
+    <p id="texto-debaixo">(^ Fotos da minha linda mãe acima ^)</p>
+    <p>Obrigado mãe por fazer meus dias melhores e terem mais sentido sempre! &#128151</p>
+</body>
+
+</html>
